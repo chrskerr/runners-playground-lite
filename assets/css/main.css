@@ -181,8 +181,8 @@ input, select, textarea {
 			font-weight: bold;
 		}
 
-		a.-pb1 {
-			margin-bottom: 1.5rem;
+		p.-pb3 {
+			margin-bottom: 3rem;
 		}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -1170,12 +1170,33 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url( "../../images/wellshare.jpg" );
+			background-image: url( "https://source.unsplash.com/8TJbrQGKFyU/1920x1280" );
 			background-position: bottom center;
 			background-size: cover;
 			background-repeat: no-repeat;
 			z-index: 1;
 		}
+
+			@media screen and (max-width: 1080px) {
+
+				#bg:after {
+					background-image: url( "https://source.unsplash.com/8TJbrQGKFyU/1080x720" );
+				}
+			}
+
+			@media screen and (max-width: 720px) {
+
+				#bg:after {
+					background-image: url( "https://source.unsplash.com/8TJbrQGKFyU/720x480" );
+				}
+			}
+
+			@media screen and (max-width: 480px) {
+
+				#bg:after {
+					background-image: url( "https://source.unsplash.com/8TJbrQGKFyU/480x320" );
+				}
+			}
 
 		body.is-article-visible #bg:after {
 			-moz-transform: scale(1.0825);
